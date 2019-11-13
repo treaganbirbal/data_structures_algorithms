@@ -18,3 +18,4 @@ const twoSum = (arr, target) => {
     return output
 }
 console.log(twoSum([2,7,11,15], 17))
+
