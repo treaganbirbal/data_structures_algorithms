@@ -19,5 +19,10 @@ let newNode3 = new Node(3)
 let newNode4 = new Node(4)
 let newNode5 = new Node(5)
 
+newNode1.next = newNode2
+newNode2.next = newNode3
+newNode3.next = newNode4
+newNode4.next = newNode5
 
-console.log(newNode5)
+
+console.log(newNode1)
