@@ -25,7 +25,32 @@ class SinglyLinkedList {
         return this
     }
 
-    pop
+    pop(){
+        //remove last elemnt in th SinglyLinkedList
+        //return the node
+        //if LinkedList is empty return null;
+        if(!this.head || !this.tail){
+            return null;
+        }
+        let current = this.head
+        let prev = this.head
+        if(this.length === 1){
+            this.head = null
+            this.tail = null
+            this.length--
+            return current
+        }
+        while(current){
+            if(current.next === null){
+                prev.next = null
+                this.tail = prev
+                this.length--
+                return current  
+            }
+            prev = current
+            current = current.next
+        }
+    }
 }
 
 // let newNode1 = new Node(1)
@@ -41,7 +66,8 @@ class SinglyLinkedList {
 
 const sll = new SinglyLinkedList();
 
-sll.push(1).push(2).push(4)
-
+sll.push(1).push(2).push(3).push(4)
+console.log(sll)
+console.log(sll.pop())
 
 console.log(sll)
