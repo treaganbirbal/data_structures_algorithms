@@ -51,6 +51,17 @@ class SinglyLinkedList {
             current = current.next
         }
     }
+
+    //get Value of node at that idx
+    //If idx is invalid return null
+    get(index){
+        let count = index;
+        let current = this.head;
+        //Deal with case if idx is invalid
+        if(count < 0 || index > this.length){
+            return null;
+        }
+    }
 }
 
 // let newNode1 = new Node(1)
@@ -67,7 +78,6 @@ class SinglyLinkedList {
 const sll = new SinglyLinkedList();
 
 sll.push(1).push(2).push(3).push(4)
-console.log(sll)
-console.log(sll.pop())
-
-console.log(sll)
+// console.log(sll)
+// console.log(sll.pop())
+console.log(sll.get(6))
