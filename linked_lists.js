@@ -55,12 +55,21 @@ class SinglyLinkedList {
     //get Value of node at that idx
     //If idx is invalid return null
     get(index){
-        let count = index;
+        let counter = index;
         let current = this.head;
         //Deal with case if idx is invalid
-        if(count < 0 || index > this.length){
+        if(index < 0 || index >= this.length){
             return null;
         }
+        while(counter){
+            counter--
+            current = current.next
+        }
+        return current
+    }
+
+    set(index, value){
+
     }
 }
 
@@ -80,4 +89,4 @@ const sll = new SinglyLinkedList();
 sll.push(1).push(2).push(3).push(4)
 // console.log(sll)
 // console.log(sll.pop())
-console.log(sll.get(6))
+console.log(sll.get(0))
