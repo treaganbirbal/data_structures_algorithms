@@ -62,6 +62,7 @@ class SinglyLinkedList {
             return null;
         }
         while(counter){
+            console.log(index)
             counter--
             current = current.next
         }
@@ -69,6 +70,9 @@ class SinglyLinkedList {
     }
 
     set(index, value){
+        //Gets the node at the position and sets the value
+        //to be the input
+        //Use get method to get the node at index
 
     }
 }
