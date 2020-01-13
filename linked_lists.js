@@ -83,6 +83,17 @@ class SinglyLinkedList {
         //return true if successfull, false if failed
         return true
         }
+
+    // print(){
+    //     let value = ''
+    //     let current = this.head
+    //     while(current){
+    //         value += `${current.value} ->`
+    //         current = current.next
+    //     }
+    //     return value += 'null'
+    // }
+    //alternative print
 }
 
 // let newNode1 = new Node(1)
@@ -101,7 +112,8 @@ const sll = new SinglyLinkedList();
 sll.push(1).push(2).push(3).push(4)
 // console.log(sll)
 // console.log(sll.pop())
-sll.set(0, 5)
+// sll.set(4, 5)
 // console.log(sll)
-console.log(sll.get(0))
+// console.log(sll.get(4))
+console.log(sll.print())
 
