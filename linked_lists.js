@@ -103,6 +103,18 @@ class SinglyLinkedList {
     // arr.push('null')
     // console.log(arr.join('->'))
 //   }
+    reverse(){
+        let currentNode = this.head
+        let temp
+        let prev
+        while(currentNode !== null){
+            temp = currentNode.next
+             currentNode.next = prev
+             prev = currentNode
+             currentNode = temp
+        }
+        return prev
+    }
 }
 
 // let newNode1 = new Node(1)
@@ -124,5 +136,6 @@ sll.push(1).push(2).push(3).push(4)
 // sll.set(4, 5)
 // console.log(sll)
 // console.log(sll.get(4))
-console.log(sll.print())
+// console.log(sll.print())
+console.log(sll.reverse())
 
