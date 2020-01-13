@@ -73,8 +73,16 @@ class SinglyLinkedList {
         //Gets the node at the position and sets the value
         //to be the input
         //Use get method to get the node at index
-
-    }
+        let returnedNode = this.get(index)
+        //if node is null that means we cannot find the node and we return false
+        if(!returnedNode){
+            return false
+        }
+        //Assign value of node
+        returnedNode.value = value;
+        //return true if successfull, false if failed
+        return true
+        }
 }
 
 // let newNode1 = new Node(1)
@@ -93,4 +101,7 @@ const sll = new SinglyLinkedList();
 sll.push(1).push(2).push(3).push(4)
 // console.log(sll)
 // console.log(sll.pop())
+sll.set(0, 5)
+// console.log(sll)
 console.log(sll.get(0))
+
