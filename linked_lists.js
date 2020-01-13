@@ -84,16 +84,25 @@ class SinglyLinkedList {
         return true
         }
 
-    // print(){
-    //     let value = ''
-    //     let current = this.head
-    //     while(current){
-    //         value += `${current.value} ->`
-    //         current = current.next
-    //     }
-    //     return value += 'null'
-    // }
+    print(){
+        let value = ''
+        let current = this.head
+        while(current){
+            value += `${current.value} ->`
+            current = current.next
+        }
+        return value += 'null'
+    }
     //alternative print
+    // let arr = []
+    // let node = this.head
+    // while(node){
+    //     arr.push(node.value)
+    //     node = node.next
+    // }
+    // arr.push('null')
+    // console.log(arr.join('->'))
+//   }
 }
 
 // let newNode1 = new Node(1)
