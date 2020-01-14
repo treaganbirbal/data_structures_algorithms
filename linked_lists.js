@@ -115,6 +115,11 @@ class SinglyLinkedList {
         }
         return prev
     }
+
+    isALoop(){
+        let currentNode = this.head;
+        let 
+    }
 }
 
 // let newNode1 = new Node(1)
