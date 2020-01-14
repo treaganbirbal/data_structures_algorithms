@@ -32,7 +32,12 @@ class DoublyLinkedList{
         let removedNode = this.tail
         if(!this.head){
             return null
-        } else {
+        }
+        else if(this.length = 1){
+            this.head = null
+            this.tail = null
+        }
+         else {
            this.tail = this.tail.prev
            this.tail.next = null
            removedNode.prev = null
@@ -50,5 +55,9 @@ class DoublyLinkedList{
 
 let dll = new DoublyLinkedList()
 dll.push(1).push(2).push(3).push(4)
-console.log(dll.pop())
+dll.pop()
+dll.pop()
+dll.pop()
+dll.pop()
+
 console.log(dll)
