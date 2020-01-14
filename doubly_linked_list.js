@@ -45,6 +45,20 @@ class DoublyLinkedList{
         this.length--
         return removedNode
     }
+    
+    unshift(val){
+        let newNode = new Node(val)
+        if(!this.head){
+            this.head = newNode
+            this.tail = newNode
+        } else {
+            newNode.next = this.head
+            this.head.prev = newNode
+            this.head = newNode
+        }
+        this.length++
+        return this
+    }
 }
 
 // let node1 = new Node(1)
@@ -59,5 +73,6 @@ dll.pop()
 dll.pop()
 dll.pop()
 dll.pop()
+dll.unshift(1).unshift(2)
 
 console.log(dll)
