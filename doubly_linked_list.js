@@ -27,6 +27,19 @@ class DoublyLinkedList{
         this.length++
         return this
     }
+
+    pop(){
+        let removedNode = this.tail
+        if(!this.head){
+            return null
+        } else {
+           this.tail = this.tail.prev
+           this.tail.next = null
+           removedNode.prev = null
+        }
+        this.length--
+        return removedNode
+    }
 }
 
 // let node1 = new Node(1)
@@ -37,4 +50,5 @@ class DoublyLinkedList{
 
 let dll = new DoublyLinkedList()
 dll.push(1).push(2).push(3).push(4)
+console.log(dll.pop())
 console.log(dll)
