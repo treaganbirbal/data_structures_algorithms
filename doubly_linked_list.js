@@ -13,6 +13,20 @@ class DoublyLinkedList{
         this.tail = null
         this.length = 0
     }
+
+    push(val){
+        let newNode = new Node(val)
+        if(!this.head){
+            this.head = newNode
+            this.tail = newNode
+        } else {
+            newNode.prev = this.tail
+            this.tail.next = newNode
+            this.tail = newNode
+        }
+        this.length++
+        return this
+    }
 }
 
 // let node1 = new Node(1)
@@ -22,4 +36,5 @@ class DoublyLinkedList{
 // node2.next = node3
 
 let dll = new DoublyLinkedList()
+dll.push(1).push(2).push(3).push(4)
 console.log(dll)
