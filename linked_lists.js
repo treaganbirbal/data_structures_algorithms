@@ -104,16 +104,28 @@ class SinglyLinkedList {
     // console.log(arr.join('->'))
 //   }
     reverse(){
-        let currentNode = this.head
-        let temp
-        let prev
-        while(currentNode !== null){
-            temp = currentNode.next
-             currentNode.next = prev
-             prev = currentNode
-             currentNode = temp
+        let node = this.head
+        this.head = this.tail;
+        this.tail = node;
+        let next 
+        let prev = null
+        while(node){
+            next = node.next
+            node.next = prev
+            prev = node
+            node = next
         }
-        return prev
+       return this
+        // let currentNode = this.head
+        // let temp
+        // let prev
+        // while(currentNode !== null){
+        //     temp = currentNode.next
+        //      currentNode.next = prev
+        //      prev = currentNode
+        //      currentNode = temp
+        // }
+        // return prev
     }
 
     isALoop(){
@@ -152,8 +164,8 @@ console.log(sll)
 // console.log(sll)
 // console.log(sll.get(4))
 // console.log(sll.print())
-// console.log(sll.reverse())
-sll.head.next.next.next.next.next = sll.head.next.next
-console.log(sll.isALoop())
+console.log(sll.reverse())
+// sll.head.next.next.next.next.next = sll.head.next.next
+// console.log(sll.isALoop())
 
 
