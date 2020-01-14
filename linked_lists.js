@@ -117,15 +117,25 @@ class SinglyLinkedList {
     }
 
     isALoop(){
-        let currentNode = this.head;
-        let 
-    }
+        let fastPointer = this.head;
+        let slowPointer = this.head;
+        while(slowPointer && fastPointer && fastPointer.next){
+            slowPointer = slowPointer.next
+            fastPointer = fastPointer.next.next
+            if(slowPointer === fastPointer){
+                return true
+            }
+        }
+            return false
+        }
+
 }
 
+// 
 // let newNode1 = new Node(1)
 // let newNode2 = new Node(2)
 // let newNode3 = new Node(3)
-// let newNode4 = new Node(4)
+// let newNode4 = new Node(4)s
 // let newNode5 = new Node(5)
 
 // newNode1.next = newNode2
@@ -135,12 +145,15 @@ class SinglyLinkedList {
 
 const sll = new SinglyLinkedList();
 
-sll.push(1).push(2).push(3).push(4)
-// console.log(sll)
+sll.push(1).push(2).push(3).push(4).push(5)
+console.log(sll)
 // console.log(sll.pop())
 // sll.set(4, 5)
 // console.log(sll)
 // console.log(sll.get(4))
 // console.log(sll.print())
-console.log(sll.reverse())
+// console.log(sll.reverse())
+sll.head.next.next.next.next.next = sll.head.next.next
+console.log(sll.isALoop())
+
 
