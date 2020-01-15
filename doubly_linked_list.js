@@ -76,6 +76,17 @@ class DoublyLinkedList{
         this.length--
         return removedNode
     }
+
+    getNodeByIdx(index){
+        let idx = 0
+        if(!this.length || index < 0 && index > this.length){
+            return null
+        }
+        else if(this.length === 1){
+            index = 0;
+            return this.head
+        }
+    }
 }
 
 // let node1 = new Node(1)
@@ -92,5 +103,6 @@ dll.push(1).push(2).push(3).push(4)
 // dll.pop()
 // dll.unshift(1).unshift(2)
 console.log(dll.shift())
+console.log(dll.getNodeByIdx(0))
 
-console.log(dll)
+// console.log(dll)
