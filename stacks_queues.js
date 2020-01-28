@@ -26,15 +26,17 @@ class Stack{
   }
 
   pop(){
+    let returnedNode = this.top
+
       if(!this.length){
           return null
       } else {
-          let returnedNode = this.top
-          returnedNode.next = this.top
+        //   returnedNode.next = this.top
           this.top = returnedNode.next
-          return returnedNode
+          returnedNode.next = null
       }
       this.length--
+      return returnedNode
   }
 }
 
@@ -45,7 +47,7 @@ stack.push(2)
 stack.push(3)
 stack.push(4)
 stack.pop()
-console.log(stack)
+console.log(stack.top.next)
 
 
 
