@@ -46,17 +46,26 @@ class Stack{
           return this.top
       }
   }
+
+  isEmpty(){
+      if(!this.length){
+          return 'stack is empty'
+      } else{
+          return null
+      }
+  }
 }
 
 let stack = new Stack()
 
-stack.push(1)
-stack.push(2)
-stack.push(3)
-stack.push(4)
+// stack.push(1)
+// stack.push(2)
+// stack.push(3)
+// stack.push(4)
 // stack.pop()
 // console.log(stack)
-console.log(stack.peek())
+// console.log(stack.peek())
+console.log(stack.isEmpty())
 
 
 
