@@ -25,14 +25,14 @@ class Queue{
         return newNode
     }
 
-    // dequeue(){
-    //     if(!this.length){
-    //         return null
-    //     }
-    //     else {
+    dequeue(){
+        if(!this.length){
+            return null
+        }
+        else {
 
-    //     }
-    // }
+        }
+    }
 }
 
 let q = new Queue()
