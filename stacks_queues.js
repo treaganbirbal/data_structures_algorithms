@@ -38,6 +38,14 @@ class Stack{
       this.length--
       return returnedNode
   }
+
+  peek(){
+      if(!this.length){
+          return 'stack is empty'
+      } else {
+          return this.top
+      }
+  }
 }
 
 let stack = new Stack()
@@ -46,8 +54,9 @@ stack.push(1)
 stack.push(2)
 stack.push(3)
 stack.push(4)
-stack.pop()
-console.log(stack.top.next)
+// stack.pop()
+// console.log(stack)
+console.log(stack.peek())
 
 
 
