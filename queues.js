@@ -26,16 +26,23 @@ class Queue{
     }
 
     dequeue(){
+        let returnedNode 
         if(!this.length){
             return null
         }
         else {
-
+            returnedNode = this.first
+            this.first = this.first.next
+            returnedNode.next = null
         }
+        this.length--
+        return returnedNode
+
     }
 }
 
 let q = new Queue()
 q.enqueue(1)
-console.log(q.enqueue(2))
+q.enqueue(2)
+console.log(q.dequeue())
 console.log(q)
