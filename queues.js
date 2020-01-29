@@ -39,10 +39,19 @@ class Queue{
         return returnedNode
 
     }
+
+    isEmpty(){
+        if(!this.length){
+            return "Queue is empty"
+        } else {
+            return null
+        }
+    }
 }
 
 let q = new Queue()
-q.enqueue(1)
-q.enqueue(2)
-console.log(q.dequeue())
-console.log(q)
+// q.enqueue(1)
+// q.enqueue(2)
+// console.log(q.dequeue())
+// console.log(q)
+console.log(q.isEmpty())
