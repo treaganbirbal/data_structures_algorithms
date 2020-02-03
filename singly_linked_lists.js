@@ -128,6 +128,15 @@ class SinglyLinkedList {
         // return prev
     }
 
+    getNodeAtMiddle(){
+        let index = 0
+        if(!this.length){
+            return null
+        } else {
+            return this.length
+        }
+    }
+
     isALoop(){
         let fastPointer = this.head;
         let slowPointer = this.head;
@@ -158,14 +167,15 @@ class SinglyLinkedList {
 const sll = new SinglyLinkedList();
 
 sll.push(1).push(2).push(3).push(4).push(5)
-console.log(sll)
+// console.log(sll)
 // console.log(sll.pop())
 // sll.set(4, 5)
 // console.log(sll)
 // console.log(sll.get(4))
 // console.log(sll.print())
-console.log(sll.reverse())
+// console.log(sll.reverse())
 // sll.head.next.next.next.next.next = sll.head.next.next
 // console.log(sll.isALoop())
+console.log(sll.getNodeAtMiddle())
 
 
