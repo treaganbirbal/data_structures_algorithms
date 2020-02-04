@@ -128,7 +128,7 @@ class SinglyLinkedList {
         // return prev
     }
 
-    getNodeAtMiddle(){
+    getMiddleNode(){
         let current = this.head
         let index = 0
         if(!this.length){
@@ -185,6 +185,6 @@ sll.push(1).push(2).push(3).push(4).push(5).push(6)
 // console.log(sll.reverse())
 // sll.head.next.next.next.next.next = sll.head.next.next
 // console.log(sll.isALoop())
-console.log(sll.getNodeAtMiddle())
+console.log(sll.getMiddleNode())
 
 
