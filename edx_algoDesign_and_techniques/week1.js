@@ -12,3 +12,7 @@ const twoSum = (a, b) => a + b;
 
 //********/
 
+// 2.   Maximum Pairwise Product - Find the maximum product of two distinct num-bers in a sequence of non-negative integers.
+
+/
+
