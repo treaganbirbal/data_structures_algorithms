@@ -19,12 +19,14 @@ const input = [[10],
                 [7, 5, 14, 2, 8, 8, 10, 1, 2, 3]]
 
 const maxPairWiseProduct = (arr) => {
+    let product = 0;
     for(let i = 0; i < arr.length; i++){
-        for(let j = 0; j < arr[i].length; j++){
-            console.log(arr[i][j])
+        for(let j = 0 ; j < arr[i].length; j++){
+           console.log( arr[i])
+        //    console.log(product)
         }
     }
 }
 
-maxPairWiseProduct(input)
+console.log(maxPairWiseProduct(input))
 
