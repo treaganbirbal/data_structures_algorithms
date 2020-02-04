@@ -159,6 +159,10 @@ class SinglyLinkedList {
             return false
         }
 
+    getStartOfLoop(){
+        let 
+    }
+
 }
 
 // 
