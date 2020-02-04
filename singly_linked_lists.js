@@ -129,13 +129,20 @@ class SinglyLinkedList {
     }
 
     getNodeAtMiddle(){
+        let current = this.head
         let index = 0
         if(!this.length){
             return null
         } else if(this.length <= 2){
             return this.head
         } else {
-            return this.length
+            while(current){
+                index++
+                current = current.next
+                if(index === Math.floor((this.length/2))){
+                    return current
+                }
+            }
         }
     }
 
@@ -168,7 +175,7 @@ class SinglyLinkedList {
 
 const sll = new SinglyLinkedList();
 
-sll.push(1).push(2).push(3).push(4).push(5)
+sll.push(1).push(2).push(3).push(4).push(5).push(6)
 // console.log(sll)
 // console.log(sll.pop())
 // sll.set(4, 5)
