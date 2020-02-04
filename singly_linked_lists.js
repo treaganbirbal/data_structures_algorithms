@@ -132,6 +132,8 @@ class SinglyLinkedList {
         let index = 0
         if(!this.length){
             return null
+        } else if(this.length <= 2){
+            return this.head
         } else {
             return this.length
         }
