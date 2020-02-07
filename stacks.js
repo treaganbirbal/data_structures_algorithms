@@ -54,7 +54,7 @@ class Stack{
           return null
       }
   }
-}
+}  
 
 let stack = new Stack()
 
