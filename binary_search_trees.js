@@ -7,7 +7,17 @@ class Node{
 }
 
 class BST{
-    constructor()
+    constructor(){
+        this.root = null;
+    }
+
+    insert(value){
+        const newNode = new Node(value);
+
+        if(!this.root){
+            this.root = newNode
+        }
+    }
 }
 
 // let node1 = new Node(1);
