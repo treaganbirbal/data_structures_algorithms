@@ -34,6 +34,8 @@ graph.addVertex(5);
 graph.addEdge(1,2);
 graph.addEdge(2,3);
 
+graph.removeEdge(2, 3);
+
 
 console.log(graph)
 
