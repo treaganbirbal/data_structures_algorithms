@@ -46,7 +46,7 @@ graph.removeEdge(2, 3);
 graph.removeVertex(3)
 
 
-console.log(graph)
+console.log(graph)  
 
 
 // class Graph {
