@@ -19,7 +19,11 @@ class Graph {
 }
 
 const graph = new Graph();
-graph.addVertex(1)
+graph.addVertex(1);
+graph.addVertex(2);
+graph.addVertex(3);
+graph.addVertex(4);
+graph.addVertex(5);
 
 console.log(graph)
 
