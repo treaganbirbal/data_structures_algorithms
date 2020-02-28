@@ -11,10 +11,10 @@ class Graph {
   }
 
   addEdge(v1, v2){
-      let value = this.adjacencyList[v1];
-      value.push(v2)
+      let value1 = this.adjacencyList[v1];
+      value1.push(v2)
       let value2 = this.adjacencyList[v2];
-      value.push(v1)
+      value2.push(v1)
   }
 }
 
@@ -24,6 +24,10 @@ graph.addVertex(2);
 graph.addVertex(3);
 graph.addVertex(4);
 graph.addVertex(5);
+
+graph.addEdge(1,2);
+graph.addEdge(2,3);
+
 
 console.log(graph)
 
