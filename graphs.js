@@ -17,3 +17,6 @@ class Graph {
       value.push(v1)
   }
 }
+
+const graph = new Graph();
+
