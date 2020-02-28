@@ -43,6 +43,7 @@ graph.addEdge(1,2);
 graph.addEdge(2,3);
 
 graph.removeEdge(2, 3);
+graph.removeVertex(3)
 
 
 console.log(graph)
