@@ -19,4 +19,7 @@ class Graph {
 }
 
 const graph = new Graph();
+graph.addVertex(1)
+
+console.log(graph)
 
