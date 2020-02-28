@@ -67,3 +67,77 @@ bst.insert(node1);
 
 
 console.log(bst);
+
+
+// class BST {
+//     constructor(val) {
+//       this.val = val
+//       this.left = null
+//       this.right = null
+//     }
+//     insert(val) {
+//       this.val > val ?
+//         this.right ?
+//           this.right.insert(val)
+//           :
+//           this.right = new BST(val)
+//         :
+//         this.left ?
+//           this.left.insert(val)
+//           :
+//           this.left = new BST(val)
+//     }
+//     contains(val){
+//       if(this.val === val) return true
+//       return this.val > val ?
+//            this.right ? this.right.contains(val) : false
+//           :
+//           this.left? this.left.contains(val) : false
+//     }
+//     bfs(){
+//       let q = [this]
+//       let i = 0
+//       while(i < q.length){
+//       if(q[i].left) q.push(q[i].left)
+//       if(q[i].right) q.push(q[i].right)
+//        i++
+//       }
+//       return q.map(node => node.val)
+//     }
+//     inOrder(){
+//       return [
+//         ...this.left ? this.left.inOrder() : [],
+//         this.val,
+//         ...this.right ? this.right.inOrder() : []    
+//       ]
+//     }
+//      preOrder(){
+//       return [
+//         this.val,
+//         ...(this.left ? this.left.inOrder() : []),
+//         ...(this.right ? this.right.inOrder() : [])    
+//       ]
+//     }
+//     postOrder(){
+//       return [
+//         ...this.left ? this.left.inOrder() : [],      
+//         ...this.right ? this.right.inOrder() : [],
+//         this.val    
+//       ]
+//     }
+//   }
+//   let tree = new BST(3)
+//   tree.insert(0)
+//   tree.insert(4)
+//   tree.insert(6)
+//   tree.insert(5)
+//   tree.insert(-1)
+//   tree.insert(1)
+//   console.log(tree.contains(100))
+//   console.log(tree.contains(0))
+//   console.log(tree.contains(11))
+//   console.log(tree.contains(-1))
+//   console.log(tree.inOrder())
+//   console.log(tree.preOrder())
+//   console.log(tree.postOrder())
+//   console.log(tree.bfs())
