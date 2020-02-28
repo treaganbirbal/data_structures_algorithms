@@ -9,4 +9,11 @@ class Graph {
           list[vertex] = [];
       }
   }
+
+  addEdge(v1, v2){
+      let value = this.adjacencyList[v1];
+      value.push(v2)
+      let value2 = this.adjacencyList[v2];
+      value.push(v1)
+  }
 }
