@@ -1,3 +1,5 @@
-class Graph(){
-    
+class Graph {
+  constructor() {
+      
+  }
 }
