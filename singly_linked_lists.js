@@ -164,19 +164,22 @@ class SinglyLinkedList {
         let fastPointer = this.head;
     
         while(slowPointer && fastPointer){
+            slowPointer = slowPointer.next
             //if hits null, then there is no loop;
             if(!fastPointer.next){
                 return null
             }
-            fastPointer = fastPointer.next.next;
+            fastPointer = fastPointer.next.next
             if(slowPointer === fastPointer){
                 slowPointer = this.head;
-                while(slowPointer !== fast){
+                while(slowPointer !== fastPointer){
                     slowPointer = slowPointer.next;
-                    fastPointer = fastPointer.next
+                    fastPointer = fastPointer.next;
                 }
-                return slowPointer;
+                return slowPointer
+
             }
+            
         }
     }
 
