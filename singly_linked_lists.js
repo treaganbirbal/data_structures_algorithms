@@ -183,6 +183,10 @@ class SinglyLinkedList {
         }
     }
 
+    rotateByKthNode(){
+        
+    }
+
 }
 
 // 
