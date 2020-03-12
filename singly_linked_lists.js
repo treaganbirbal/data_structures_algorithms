@@ -168,6 +168,15 @@ class SinglyLinkedList {
             if(!fastPointer.next){
                 return null
             }
+            fastPointer = fastPointer.next.next;
+            if(slowPointer === fastPointer){
+                slowPointer = this.head;
+                while(slowPointer !== fast){
+                    slowPointer = slowPointer.next;
+                    fastPointer = fastPointer.next
+                }
+                return slowPointer;
+            }
         }
     }
 
@@ -195,8 +204,10 @@ sll.push(1).push(2).push(3).push(4).push(5).push(6)
 // console.log(sll.get(4))
 // console.log(sll.print())
 // console.log(sll.reverse())
-// sll.head.next.next.next.next.next = sll.head.next.next
+sll.head.next.next.next.next.next = sll.head.next.next
 // console.log(sll.isALoop())
-console.log(sll.getMiddleNode())
+console.log(sll.getStartOfLoop())
+// console.log(sll.getMiddleNode())
+
 
 
