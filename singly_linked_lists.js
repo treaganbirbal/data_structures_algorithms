@@ -160,7 +160,15 @@ class SinglyLinkedList {
         }
 
     getStartOfLoop(){
-        let 
+        let slowPointer = this.head;
+        let fastPointer = this.head;
+    
+        while(slowPointer && fastPointer){
+            //if hits null, then there is no loop;
+            if(!fastPointer.next){
+                return null
+            }
+        }
     }
 
 }
