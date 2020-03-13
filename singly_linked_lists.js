@@ -183,12 +183,8 @@ class SinglyLinkedList {
         }
     }
 
-    rotateByKthNode(sll, k){
-        if(!sll.head || sll.head.next === null){
-            return this.head;
-        } 
-        let i = 0; 
-        let list
+    removeElement(){
+        
     }
 
 }
