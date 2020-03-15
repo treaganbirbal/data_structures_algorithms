@@ -183,8 +183,8 @@ class SinglyLinkedList {
         }
     }
 
-    removeElement(){
-        console.log(this.head)
+    removeElement(value){
+        console.log('here',this.head.value)
     }
 
 }
