@@ -184,7 +184,18 @@ class SinglyLinkedList {
     }
 
     removeElement(value){
-        console.log('here',this.head.value)
+        if(!this.head){
+            return;
+        }
+        let current = this.head;
+        while(current){
+            if(value === this.head.value){
+                this.head = this.head.next
+                // this.head = null;
+            }
+            current = current.next;
+        }
+        return this
     }
 
 }
@@ -215,7 +226,8 @@ sll.head.next.next.next.next.next = sll.head.next.next
 // console.log(sll.isALoop())
 // console.log(sll.getStartOfLoop())
 // console.log(sll.getMiddleNode())
-sll.removeElement()
+sll.removeElement(2)
+console.log(sll)
 
 
 
