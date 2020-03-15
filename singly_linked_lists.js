@@ -188,12 +188,14 @@ class SinglyLinkedList {
             return;
         }
         let current = this.head;
-        while(current){
-            if(value === this.head.value){
-                this.head = this.head.next
-                // this.head = null;
-            }
-            current = current.next;
+        while(current.value < this.length - 1){
+            console.log(current.value)
+            current = current.next
+            // if(value === current.value){
+            //     this.head = this.head.next
+            //     // this.head = null;
+            // }
+            // current = current.next;
         }
         return this
     }
@@ -222,11 +224,11 @@ sll.push(1).push(2).push(3).push(4).push(5).push(6)
 // console.log(sll.get(4))
 // console.log(sll.print())
 // console.log(sll.reverse())
-sll.head.next.next.next.next.next = sll.head.next.next
+// sll.head.next.next.next.next.next = sll.head.next.next
 // console.log(sll.isALoop())
 // console.log(sll.getStartOfLoop())
 // console.log(sll.getMiddleNode())
-sll.removeElement(2)
+// console.log(sll.removeElement(2))
 console.log(sll)
 
 
