@@ -184,7 +184,7 @@ class SinglyLinkedList {
     }
 
     removeElement(){
-        
+        console.log(this.head)
     }
 
 }
@@ -213,8 +213,9 @@ sll.push(1).push(2).push(3).push(4).push(5).push(6)
 // console.log(sll.reverse())
 sll.head.next.next.next.next.next = sll.head.next.next
 // console.log(sll.isALoop())
-console.log(sll.getStartOfLoop())
+// console.log(sll.getStartOfLoop())
 // console.log(sll.getMiddleNode())
+sll.removeElement()
 
 
 
