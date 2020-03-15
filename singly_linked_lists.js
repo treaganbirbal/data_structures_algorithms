@@ -188,7 +188,7 @@ class SinglyLinkedList {
             return;
         }
         let current = this.head;
-        while(current.value < this.length - 1){
+        while(current){
             console.log(current.value)
             current = current.next
             // if(value === current.value){
@@ -229,7 +229,6 @@ sll.push(1).push(2).push(3).push(4).push(5).push(6)
 // console.log(sll.getStartOfLoop())
 // console.log(sll.getMiddleNode())
 // console.log(sll.removeElement(2))
-console.log(sll)
-
+console.log(sll.print())
 
 
